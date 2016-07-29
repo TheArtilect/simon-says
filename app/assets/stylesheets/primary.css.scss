@@ -1,3 +1,7 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
 body {
   background-color: #EEF7FA;
 }
@@ -113,8 +117,8 @@ table{
 
 td {
   border-collapse: collapse;
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   text-align: center;
   font-size: 50px;
   color: white;

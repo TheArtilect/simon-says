@@ -2,7 +2,10 @@ function startPage(){
 
 
   var selectors = ["upper-left", "top", "upper-right", "left", "lower-left", "bottom", "lower-right", "right"];
-  
+    
+  var started = false;
+    
+    
   var audio = {
     "upper-left": "https://s3.amazonaws.com/freecodecamp/simonSound1.mp3",
     "top": "http://soundbible.com/mp3/Realistic_Punch-Mark_DiAngelo-1609462330.mp3",
@@ -51,6 +54,7 @@ function startPage(){
           resetAll();
           $("#middle").text("Reset");
           restricted();
+          started = true;
         }
       }
     }
@@ -69,8 +73,10 @@ function startPage(){
     }
   }
   
+
+    
   $(".quad, .rectangles").not("#middle").on("click", function() {
-    if (displaySequence === false) {
+    if ((displaySequence === false) && (started == true)) {
       var id = $(this).attr("id");
       playGame(id);
       if (checkInd == sequence.length) {
@@ -80,11 +86,18 @@ function startPage(){
     }
   });
   
+
+  
+  
   $(".quad, .rectangles").not("#middle").on('click', function() {
-    var id = $(this).attr("id");
-    noise(id);
+    if (started == true){
+      var id = $(this).attr("id");
+      noise(id);
+    }
   })
   
+  
+
   $("#middle").click(function() {
     $("#middle").text("");
     $("#middle").css("font-size", "50px");
@@ -96,6 +109,7 @@ function startPage(){
     }
     startGame();
     playBoth();
+    started = true;
   });
   
   var startSequence;
@@ -185,6 +199,7 @@ function startPage(){
   
   function resetAll() {
     sequence = [];
+    started = false;
     checkInd = 0;
     clearInterval(startSequence);
     clearInterval(startSoundSequence);
