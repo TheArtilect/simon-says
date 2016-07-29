@@ -1,0 +1,50 @@
+
+<center>
+  <div id="diag-overlay"></div>
+  <div id="diag-box" class="col-md-4 col-md-offset-4">
+    <div>
+      <div id="diag-box-head"></div>
+      <div id="diag-box-body"></div>
+      <div id="diag-box-foot"><button id='play-again'>Play Again!</button></div>
+    </div>
+  </div>
+</center>
+
+
+
+
+<div id='overall' class="col-md-4 col-md-offset-4">
+ <center> <h1>Simon Says!</h1>
+  <div id="desc">Reach 20 to win!</div>
+  <div id="strict">Strict Mode</div>
+  <table>
+    <tr>
+      <td id="upper-left" class="quad quad-top quad-l"></td>
+      <!-- By Ian Agpawa -->
+      <td class="rectangles" id="top"></td>
+      <td id='upper-right' class="quad quad-top quad-r"></td>
+    </tr>
+    <tr>
+      <td class="rectangles" id="left"></td>
+      <td class="rectangles" id="middle">Click here</td>
+      <td class="rectangles" id="right"></td>
+    </tr>
+    <tr>
+      <td id='lower-left' class="quad quad-bot quad-l"></td>
+      <td class="rectangles" id="bottom"></td>
+      <td id='lower-right' class="quad quad-bot quad-r"></td>
+    </tr>
+
+  </table>
+  <div id="reset">Reset</div>
+
+  <div id="music"></div>
+  </center>
+
+  <div>
+    <audio preload='auto' id='win'>
+      <source src="http://soundbible.com/mp3/1_person_cheering-Jett_Rifkin-1851518140.mp3" type='audio/mp3'>
+    </audio>
+  </div>
+
+</div>
