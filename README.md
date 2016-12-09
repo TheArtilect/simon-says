@@ -1,6 +1,6 @@
 # Simon Says
 
-#### This repo is for a Simon Says clone project from freeCodeCamp's Front End Development Certifcation.
+#### This repo is for a Simon Says clone project from freeCodeCamp's Front End Development Certification.
 
 ### Quick Start
 Clone the repo:
@@ -37,9 +37,10 @@ simon-says/
     |       |       ├── application_controller.rb
     |       |       └── welcome_controller.rb
     |       └─── views/
-    |               ├── error.jade
-    |               ├── index.jade
-    |               └── layout.jade
+    |               ├── layouts/
+    |               |       └── application.html.erb
+    |               └── welcome
+    |                       └── index.html.erb
     ├── bin/
     |     ├── bundle
     |     ├── rails
