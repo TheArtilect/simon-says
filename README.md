@@ -25,25 +25,63 @@ In order to view the app locally, with the terminal in the project folder, execu
 Within the project folder, you will find the following files:
 
 ```
-imageSearch/
-    ├── bin/
-    |     └── www
-    ├── public/
-    |       ├── stylesheets/
-    |       |       └─── style.css
-    |       |
-    |       ├── routes/
-    |       |    ├── index.js
-    |       |    └── recent.js
-    |       |
+simon-says/
+    ├───  app/
+    |       ├── assets/
+    |       |    ├── javascripts/
+    |       |    |      ├── application.js
+    |       |    |      └── main.js
+    |       |    └── stylesheets/
+    |       |           ├── application.css
+    |       |           ├── primary.css.scss
+    |       |           └── welcome.scss
+    |       ├─── controllers/
+    |       |       ├── application_controller.rb
+    |       |       └── welcome_controller.rb
     |       └─── views/
     |               ├── error.jade
     |               ├── index.jade
     |               └── layout.jade
+    ├── bin/
+    |     ├── bundle
+    |     ├── rails
+    |     ├── rake
+    |     ├── setup
+    |     └── spring
+    ├───  config/
+    |       ├── environments/
+    |       |       ├── development.rb
+    |       |       ├── production.rb
+    |       |       └── test.rb
+    |       ├─── initializers/
+    |       |       ├── assets.rb
+    |       |       ├── backtrace_silencers.rb
+    |       |       ├── cookies_serializer.rb
+    |       |       ├── filter_parameter_logging.rb
+    |       |       ├── inflections.rb
+    |       |       ├── mime_types.rb
+    |       |       ├── session_store.rb
+    |       |       └── wrap_parameters.rb
+    |       ├─── locales/
+    |       |       └── en.yml
+    |       ├─── application.rb
+    |       ├─── boot.rb
+    |       ├─── database.yml
+    |       ├─── environment.rb
+    |       ├─── routes.rb
+    |       └─── secrets.yml
+    ├── public/
+    |     ├── 404.html
+    |     ├── 422.html
+    |     ├── 500.html
+    |     ├── favicon.ico
+    |     └── robots.txt
     ├── .gitignore
-    ├── Procfile
-    ├── app.js
-    └── package.json
+    ├── config.ru
+    ├── Gemfile
+    ├── Gemfile.lock
+    ├── Rakefile
+    └── README.md
 ```
 
 ## Creator
