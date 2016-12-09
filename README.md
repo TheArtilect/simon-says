@@ -1,7 +1,5 @@
 # Simon Says
 
-### By Ian Agpawa
-
 #### This repo is for a Simon Says clone project from freeCodeCamp's Front End Development Certifcation.
 
 ### Quick Start
